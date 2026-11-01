@@ -8,36 +8,49 @@
           content="width=device-width, initial-scale=1.0">
     <meta name="description"
           content="Register with NexaTech Solutions using our accessible client registration form.">
-
     <title>Client Registration | NexaTech Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Client Registration</h1>
-        <p>Start Your Digital Journey with NexaTech</p>
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <p class="site-logo">
+                    NexaTech <span>Solutions</span>
+                </p>
+                <p class="tagline">
+                    Innovating Your Digital Future
+                </p>
+            </div>
 
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li>
-                    <a href="registration.html" aria-current="page">
-                        Register
-                    </a>
-                </li>
-                <li><a href="profile.html">My Profile</a></li>
-            </ul>
-        </nav>
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="registration.html" aria-current="page">
+                            Register
+                        </a>
+                    </li>
+                    <li><a href="profile.html">My Profile</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" class="registration-page">
 
-        <section id="registration-introduction">
+        <section id="registration-introduction" class="registration-intro">
+            <p class="section-label">JOIN NEXATECH</p>
+
+            <h1>Start Your Digital Journey with NexaTech</h1>
+
             <h2>Create Your Client Profile</h2>
 
             <p>
@@ -46,247 +59,281 @@
                 grouped fields, and HTML5 validation.
             </p>
 
-            <p>
+            <p class="required-notice">
                 Fields marked with * are required.
             </p>
         </section>
 
-        <section id="registration-form">
+        <section id="registration-form" class="registration-form-section">
             <h2>Registration Details</h2>
 
-            <form action="#" method="post">
+            <form action="#" method="post" class="registration-form">
 
-                <fieldset>
+                <fieldset class="registration-fieldset">
                     <legend>Personal Information</legend>
 
-                    <p>
+                    <div class="form-group">
                         <label for="first-name">First Name *</label>
-                        <input type="text"
-                               id="first-name"
-                               name="first_name"
-                               autocomplete="given-name"
-                               minlength="2"
-                               maxlength="50"
-                               required>
-                    </p>
+                        <input
+                            type="text"
+                            id="first-name"
+                            name="first_name"
+                            autocomplete="given-name"
+                            minlength="2"
+                            maxlength="50"
+                            required
+                        >
+                    </div>
 
-                    <p>
+                    <div class="form-group">
                         <label for="last-name">Last Name *</label>
-                        <input type="text"
-                               id="last-name"
-                               name="last_name"
-                               autocomplete="family-name"
-                               minlength="2"
-                               maxlength="50"
-                               required>
-                    </p>
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="last_name"
+                            autocomplete="family-name"
+                            minlength="2"
+                            maxlength="50"
+                            required
+                        >
+                    </div>
 
-                    <p>
+                    <div class="form-group">
                         <label for="birth-date">Date of Birth *</label>
-                        <input type="date"
-                               id="birth-date"
-                               name="birth_date"
-                               required>
-                    </p>
+                        <input
+                            type="date"
+                            id="birth-date"
+                            name="birth_date"
+                            required
+                        >
+                    </div>
 
-                    <fieldset>
+                    <fieldset class="choice-fieldset">
                         <legend>Gender (Optional)</legend>
 
-                        <label for="gender-female">
-                            <input type="radio"
-                                   id="gender-female"
-                                   name="gender"
-                                   value="female">
-                            Female
-                        </label>
+                        <div class="choice-group">
+                            <label for="gender-female">
+                                <input
+                                    type="radio"
+                                    id="gender-female"
+                                    name="gender"
+                                    value="female"
+                                >
+                                Female
+                            </label>
 
-                        <label for="gender-male">
-                            <input type="radio"
-                                   id="gender-male"
-                                   name="gender"
-                                   value="male">
-                            Male
-                        </label>
+                            <label for="gender-male">
+                                <input
+                                    type="radio"
+                                    id="gender-male"
+                                    name="gender"
+                                    value="male"
+                                >
+                                Male
+                            </label>
 
-                        <label for="gender-other">
-                            <input type="radio"
-                                   id="gender-other"
-                                   name="gender"
-                                   value="prefer-not-to-say">
-                            Prefer not to say
-                        </label>
+                            <label for="gender-other">
+                                <input
+                                    type="radio"
+                                    id="gender-other"
+                                    name="gender"
+                                    value="prefer-not-to-say"
+                                >
+                                Prefer not to say
+                            </label>
+                        </div>
                     </fieldset>
 
-                    <p>
+                    <div class="form-group">
                         <label for="phone">Phone Number *</label>
-                        <input type="tel"
-                               id="phone"
-                               name="phone"
-                               autocomplete="tel"
-                               minlength="7"
-                               maxlength="20"
-                               required>
-                    </p>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            autocomplete="tel"
+                            minlength="7"
+                            maxlength="20"
+                            required
+                        >
+                    </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="registration-fieldset">
                     <legend>Account Information</legend>
 
-                    <p>
+                    <div class="form-group">
                         <label for="username">Username *</label>
-                        <input type="text"
-                               id="username"
-                               name="username"
-                               autocomplete="username"
-                               minlength="4"
-                               maxlength="20"
-                               required>
-                    </p>
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            autocomplete="username"
+                            minlength="4"
+                            maxlength="20"
+                            required
+                        >
+                    </div>
 
-                    <p>
+                    <div class="form-group">
                         <label for="email">Email Address *</label>
-                        <input type="email"
-                               id="email"
-                               name="email"
-                               autocomplete="email"
-                               required>
-                    </p>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
 
-                    <p>
+                    <div class="form-group">
                         <label for="password">Password *</label>
-                        <input type="password"
-                               id="password"
-                               name="password"
-                               autocomplete="new-password"
-                               minlength="8"
-                               required>
-                    </p>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            autocomplete="new-password"
+                            minlength="8"
+                            required
+                        >
+                    </div>
 
-                    <p>
+                    <div class="form-group">
                         <label for="confirm-password">
                             Confirm Password *
                         </label>
-                        <input type="password"
-                               id="confirm-password"
-                               name="confirm_password"
-                               autocomplete="new-password"
-                               minlength="8"
-                               required>
-                    </p>
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            name="confirm_password"
+                            autocomplete="new-password"
+                            minlength="8"
+                            required
+                        >
+                    </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="registration-fieldset">
                     <legend>Address Information</legend>
 
-                    <p>
+                    <div class="form-group">
                         <label for="country">Country *</label>
-                        <input type="text"
-                               id="country"
-                               name="country"
-                               autocomplete="country-name"
-                               required>
-                    </p>
+                        <input
+                            type="text"
+                            id="country"
+                            name="country"
+                            autocomplete="country-name"
+                            required
+                        >
+                    </div>
 
-                    <p>
+                    <div class="form-group">
                         <label for="city">City *</label>
-                        <input type="text"
-                               id="city"
-                               name="city"
-                               autocomplete="address-level2"
-                               required>
-                    </p>
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            autocomplete="address-level2"
+                            required
+                        >
+                    </div>
 
-                    <p>
+                    <div class="form-group">
                         <label for="street">Street Address *</label>
-                        <input type="text"
-                               id="street"
-                               name="street"
-                               autocomplete="street-address"
-                               required>
-                    </p>
+                        <input
+                            type="text"
+                            id="street"
+                            name="street"
+                            autocomplete="street-address"
+                            required
+                        >
+                    </div>
 
-                    <p>
+                    <div class="form-group">
                         <label for="postal-code">Postal Code</label>
-                        <input type="text"
-                               id="postal-code"
-                               name="postal_code"
-                               autocomplete="postal-code">
-                    </p>
+                        <input
+                            type="text"
+                            id="postal-code"
+                            name="postal_code"
+                            autocomplete="postal-code"
+                        >
+                    </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="registration-fieldset">
                     <legend>Service Preferences</legend>
 
-                    <p>
+                    <div class="form-group">
                         <label for="service-interest">
                             Primary Service Interest *
                         </label>
 
-                        <select id="service-interest"
-                                name="service_interest"
-                                required>
-                            <option value="">
-                                Select a service
-                            </option>
-                            <option value="web">
-                                Web Development
-                            </option>
-                            <option value="mobile">
-                                Mobile App Development
-                            </option>
-                            <option value="software">
-                                Custom Software Solutions
-                            </option>
+                        <select
+                            id="service-interest"
+                            name="service_interest"
+                            required
+                        >
+                            <option value="">Select a service</option>
+                            <option value="web">Web Development</option>
+                            <option value="mobile">Mobile App Development</option>
+                            <option value="software">Custom Software Solutions</option>
                         </select>
-                    </p>
+                    </div>
 
-                    <fieldset>
+                    <fieldset class="choice-fieldset">
                         <legend>Preferred Contact Method *</legend>
 
-                        <label for="contact-email">
-                            <input type="radio"
-                                   id="contact-email"
-                                   name="contact_method"
-                                   value="email"
-                                   required>
-                            Email
-                        </label>
+                        <div class="choice-group">
+                            <label for="contact-email">
+                                <input
+                                    type="radio"
+                                    id="contact-email"
+                                    name="contact_method"
+                                    value="email"
+                                    required
+                                >
+                                Email
+                            </label>
 
-                        <label for="contact-phone">
-                            <input type="radio"
-                                   id="contact-phone"
-                                   name="contact_method"
-                                   value="phone">
-                            Phone
-                        </label>
+                            <label for="contact-phone">
+                                <input
+                                    type="radio"
+                                    id="contact-phone"
+                                    name="contact_method"
+                                    value="phone"
+                                >
+                                Phone
+                            </label>
+                        </div>
                     </fieldset>
 
-                    <p>
+                    <div class="terms-group">
                         <label for="terms">
-                            <input type="checkbox"
-                                   id="terms"
-                                   name="terms"
-                                   value="accepted"
-                                   required>
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                name="terms"
+                                value="accepted"
+                                required
+                            >
                             I agree to the demonstration terms *
                         </label>
-                    </p>
+                    </div>
                 </fieldset>
 
-                <p>
-                    <button type="submit">
+                <div class="form-actions">
+                    <button type="submit" class="btn">
                         Create Account
                     </button>
 
-                    <button type="reset">
+                    <button type="reset" class="btn btn-secondary">
                         Clear Form
                     </button>
-                </p>
+                </div>
 
             </form>
         </section>
 
-        <section id="registration-notice">
+        <section id="registration-notice" class="info-card">
             <h2>Demonstration Notice</h2>
 
             <p>
@@ -304,7 +351,7 @@
 
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 NexaTech Solutions.</p>
         <p>All rights reserved.</p>
         <p>HTML5 Full Stack Training Project.</p>

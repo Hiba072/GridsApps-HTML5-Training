@@ -11,36 +11,53 @@
           content="Explore the NexaTech Solutions training gallery featuring web development, collaboration, software planning, and digital projects.">
 
     <title>Project Gallery | NexaTech Solutions</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>NexaTech Project Gallery</h1>
+    <header class="site-header">
+        <div class="container">
 
-        <p>Exploring Technology Through Practical Development</p>
+            <div class="brand">
+                <p class="site-logo">
+                    NexaTech <span>Solutions</span>
+                </p>
 
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li>
-                    <a href="gallery.html" aria-current="page">
-                        Gallery
-                    </a>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="registration.html">Register</a></li>
-                <li><a href="profile.html">My Profile</a></li>
-            </ul>
-        </nav>
+                <p class="tagline">
+                    Innovating Your Digital Future
+                </p>
+            </div>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li>
+                        <a href="gallery.html" aria-current="page">
+                            Gallery
+                        </a>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    <li><a href="profile.html">My Profile</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" class="gallery-page">
 
-        <section id="gallery-introduction">
+        <section id="gallery-introduction" class="gallery-intro">
+
+            <p class="section-label">OUR CREATIVE WORKSPACE</p>
+
+            <h1>Exploring Technology Through Practical Development</h1>
+
             <h2>Explore Our Gallery</h2>
 
             <p>
@@ -55,101 +72,115 @@
                 used in our fictional company
                 training project.
             </p>
+
         </section>
 
-        <section id="development-gallery">
+        <section id="development-gallery" class="gallery-section">
+
             <h2>Development and Collaboration</h2>
 
-            <figure>
-                <img
-                    src="images/company.jpg"
-                    alt="Software development team collaborating at a workspace"
-                    width="600"
-                    loading="lazy"
-                >
+            <div class="gallery-grid">
 
-                <figcaption>
-                    Collaborative software development
-                    and digital problem solving.
-                </figcaption>
-            </figure>
+                <figure class="gallery-card">
+                    <img
+                        src="images/company.jpg"
+                        alt="Software development team collaborating at a workspace"
+                        width="600"
+                        loading="lazy"
+                    >
 
-            <figure>
-                <img
-                    src="images/web-development.jpg"
-                    alt="Computer screen displaying web development code"
-                    width="600"
-                    loading="lazy"
-                >
+                    <figcaption>
+                        Collaborative software development
+                        and digital problem solving.
+                    </figcaption>
+                </figure>
 
-                <figcaption>
-                    Building structured websites
-                    with modern web technologies.
-                </figcaption>
-            </figure>
+                <figure class="gallery-card">
+                    <img
+                        src="images/web-development.jpg"
+                        alt="Computer screen displaying web development code"
+                        width="600"
+                        loading="lazy"
+                    >
 
-            <figure>
-                <img
-                    src="images/teamwork.jpg"
-                    alt="Team members discussing a software project"
-                    width="600"
-                    loading="lazy"
-                >
+                    <figcaption>
+                        Building structured websites
+                        with modern web technologies.
+                    </figcaption>
+                </figure>
 
-                <figcaption>
-                    Team collaboration during
-                    software project planning.
-                </figcaption>
-            </figure>
+                <figure class="gallery-card">
+                    <img
+                        src="images/teamwork.jpg"
+                        alt="Team members discussing a software project"
+                        width="600"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        Team collaboration during
+                        software project planning.
+                    </figcaption>
+                </figure>
+
+            </div>
+
         </section>
 
-        <section id="digital-solutions">
+        <section id="digital-solutions" class="gallery-section">
+
             <h2>Digital Solutions</h2>
 
-            <figure>
-                <img
-                    src="images/mobile-development.jpg"
-                    alt="Mobile application interface displayed on a smartphone"
-                    width="600"
-                    loading="lazy"
-                >
+            <div class="gallery-grid">
 
-                <figcaption>
-                    Designing user-friendly
-                    mobile application experiences.
-                </figcaption>
-            </figure>
+                <figure class="gallery-card">
+                    <img
+                        src="images/mobile-development.jpg"
+                        alt="Mobile application interface displayed on a smartphone"
+                        width="600"
+                        loading="lazy"
+                    >
 
-            <figure>
-                <img
-                    src="images/software-planning.jpg"
-                    alt="Workspace with software design diagrams"
-                    width="600"
-                    loading="lazy"
-                >
+                    <figcaption>
+                        Designing user-friendly
+                        mobile application experiences.
+                    </figcaption>
+                </figure>
 
-                <figcaption>
-                    Planning maintainable
-                    and efficient software systems.
-                </figcaption>
-            </figure>
+                <figure class="gallery-card">
+                    <img
+                        src="images/software-planning.jpg"
+                        alt="Workspace with software design diagrams"
+                        width="600"
+                        loading="lazy"
+                    >
 
-            <figure>
-                <img
-                    src="images/quality-assurance.jpg"
-                    alt="Developer reviewing software on a computer"
-                    width="600"
-                    loading="lazy"
-                >
+                    <figcaption>
+                        Planning maintainable
+                        and efficient software systems.
+                    </figcaption>
+                </figure>
 
-                <figcaption>
-                    Reviewing software quality
-                    and improving reliability.
-                </figcaption>
-            </figure>
+                <figure class="gallery-card">
+                    <img
+                        src="images/quality-assurance.jpg"
+                        alt="Developer reviewing software on a computer"
+                        width="600"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        Reviewing software quality
+                        and improving reliability.
+                    </figcaption>
+                </figure>
+
+            </div>
+
         </section>
 
-        <section id="gallery-information">
+        <section id="gallery-information" class="info-card">
+
             <h2>About These Images</h2>
 
             <p>
@@ -164,9 +195,11 @@
                 represent verified commercial
                 projects or real NexaTech clients.
             </p>
+
         </section>
 
-        <section id="gallery-contact">
+        <section id="gallery-contact" class="contact-banner">
+
             <h2>Explore Our Services</h2>
 
             <p>
@@ -175,14 +208,15 @@
                 in this gallery?
             </p>
 
-            <a href="services.html">
+            <a href="services.html" class="btn">
                 View Our Services
             </a>
+
         </section>
 
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 NexaTech Solutions.</p>
         <p>All rights reserved.</p>
         <p>HTML5 Full Stack Training Project.</p>

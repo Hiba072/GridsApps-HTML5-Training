@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,35 +11,49 @@
           content="Explore NexaTech Solutions blog for insights on web development, accessibility, software engineering, and digital innovation.">
 
     <title>Tech Blog | NexaTech Solutions</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>NexaTech Tech Blog</h1>
+    <header class="site-header">
+        <div class="container">
 
-        <p>Insights, Ideas, and Digital Innovation</p>
+            <div class="brand">
+                <p class="site-logo">
+                    NexaTech <span>Solutions</span>
+                </p>
 
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li>
-                    <a href="blog.html" aria-current="page">
-                        Blog
-                    </a>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="registration.html">Register</a></li>
-                <li><a href="profile.html">My Profile</a></li>
-            </ul>
-        </nav>
+                <p class="tagline">
+                    Innovating Your Digital Future
+                </p>
+            </div>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li>
+                        <a href="blog.html" aria-current="page">
+                            Blog
+                        </a>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    <li><a href="profile.html">My Profile</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" class="blog-list-page">
 
-        <section id="blog-introduction">
+        <section id="blog-introduction" class="blog-intro">
+            <p class="section-label">NEXATECH JOURNAL</p>
+            <h1>Insights, Ideas, and Digital Innovation</h1>
             <h2>Explore Our Latest Articles</h2>
 
             <p>
@@ -50,109 +63,130 @@
             </p>
         </section>
 
-        <section id="latest-articles">
+        <section id="latest-articles" class="blog-list-section">
+
             <h2>Latest Articles</h2>
 
-            <article id="modern-website">
-                <header>
-                    <h3>
-                        Why Every Business Needs a Modern Website
-                    </h3>
+            <div class="blog-cards">
 
-                    <p>Category: Web Development</p>
+                <article id="modern-website" class="blog-card">
 
-                    <p>
-                        Published:
-                        <time datetime="2026-10-15">
-                            October 15, 2026
-                        </time>
-                    </p>
+                    <div class="blog-card-content">
+                        <header class="blog-card-header">
+                            <p class="blog-category">Web Development</p>
 
-                    <p>Author: NexaTech Editorial Team</p>
-                </header>
+                            <h3>
+                                Why Every Business Needs a Modern Website
+                            </h3>
 
-                <p>
-                    A professional website helps businesses
-                    establish credibility, reach new customers,
-                    and communicate their services effectively.
-                </p>
+                            <p class="blog-date">
+                                Published:
+                                <time datetime="2026-10-15">
+                                    October 15, 2026
+                                </time>
+                            </p>
 
-                <p>
-                    Modern websites should be accessible,
-                    easy to navigate, and organized around
-                    the needs of their users.
-                </p>
+                            <p class="blog-author">
+                                Author: NexaTech Editorial Team
+                            </p>
+                        </header>
 
-                <p>
-                    <a href="blog-detail.html">
-                        Read Full Article
-                    </a>
-                </p>
-            </article>
+                        <p>
+                            A professional website helps businesses
+                            establish credibility, reach new customers,
+                            and communicate their services effectively.
+                        </p>
 
-            <article id="semantic-html">
-                <header>
-                    <h3>The Importance of Semantic HTML5</h3>
+                        <p>
+                            Modern websites should be accessible,
+                            easy to navigate, and organized around
+                            the needs of their users.
+                        </p>
 
-                    <p>Category: Web Accessibility</p>
+                        <a href="blog-detail.html" class="btn">
+                            Read Full Article
+                        </a>
+                    </div>
 
-                    <p>
-                        Published:
-                        <time datetime="2026-10-18">
-                            October 18, 2026
-                        </time>
-                    </p>
+                </article>
 
-                    <p>Author: NexaTech Editorial Team</p>
-                </header>
+                <article id="semantic-html" class="blog-card">
 
-                <p>
-                    Semantic HTML5 gives meaningful structure
-                    to web content through elements such as
-                    header, main, section, article, and footer.
-                </p>
+                    <div class="blog-card-content">
+                        <header class="blog-card-header">
+                            <p class="blog-category">Web Accessibility</p>
 
-                <p>
-                    Using semantic elements improves code
-                    readability and helps assistive technologies
-                    understand the organization of a page.
-                </p>
-            </article>
+                            <h3>The Importance of Semantic HTML5</h3>
 
-            <article id="digital-experiences">
-                <header>
-                    <h3>Building Better Digital Experiences</h3>
+                            <p class="blog-date">
+                                Published:
+                                <time datetime="2026-10-18">
+                                    October 18, 2026
+                                </time>
+                            </p>
 
-                    <p>Category: Software Engineering</p>
+                            <p class="blog-author">
+                                Author: NexaTech Editorial Team
+                            </p>
+                        </header>
 
-                    <p>
-                        Published:
-                        <time datetime="2026-10-22">
-                            October 22, 2026
-                        </time>
-                    </p>
+                        <p>
+                            Semantic HTML5 gives meaningful structure
+                            to web content through elements such as
+                            header, main, section, article, and footer.
+                        </p>
 
-                    <p>Author: NexaTech Editorial Team</p>
-                </header>
+                        <p>
+                            Using semantic elements improves code
+                            readability and helps assistive technologies
+                            understand the organization of a page.
+                        </p>
+                    </div>
 
-                <p>
-                    Successful digital products begin with
-                    understanding user needs and creating
-                    reliable, maintainable solutions.
-                </p>
+                </article>
 
-                <p>
-                    Clear navigation, accessible interfaces,
-                    and thoughtful content organization
-                    contribute to better user experiences.
-                </p>
-            </article>
+                <article id="digital-experiences" class="blog-card">
+
+                    <div class="blog-card-content">
+                        <header class="blog-card-header">
+                            <p class="blog-category">Software Engineering</p>
+
+                            <h3>Building Better Digital Experiences</h3>
+
+                            <p class="blog-date">
+                                Published:
+                                <time datetime="2026-10-22">
+                                    October 22, 2026
+                                </time>
+                            </p>
+
+                            <p class="blog-author">
+                                Author: NexaTech Editorial Team
+                            </p>
+                        </header>
+
+                        <p>
+                            Successful digital products begin with
+                            understanding user needs and creating
+                            reliable, maintainable solutions.
+                        </p>
+
+                        <p>
+                            Clear navigation, accessible interfaces,
+                            and thoughtful content organization
+                            contribute to better user experiences.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
         </section>
 
-        <section id="blog-categories">
+        <section id="blog-categories" class="blog-topics">
             <h2>Topics We Cover</h2>
 
-            <ul>
+            <ul class="topics-list">
                 <li>Web Development</li>
                 <li>Web Accessibility</li>
                 <li>Software Engineering</li>
@@ -160,7 +194,7 @@
             </ul>
         </section>
 
-        <section id="blog-contact">
+        <section id="blog-contact" class="contact-banner">
             <h2>Have a Project in Mind?</h2>
 
             <p>
@@ -168,14 +202,14 @@
                 your digital ideas and requirements.
             </p>
 
-            <a href="contact.html">
+            <a href="contact.html" class="btn">
                 Contact NexaTech
             </a>
         </section>
 
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 NexaTech Solutions.</p>
         <p>All rights reserved.</p>
         <p>HTML5 Full Stack Training Project.</p>

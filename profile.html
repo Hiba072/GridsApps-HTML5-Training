@@ -11,40 +11,58 @@
           content="Meet Hiba Abukaf, a Computer Science student at Birzeit University and Full Stack Development intern.">
 
     <title>Developer Profile | NexaTech Solutions</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Developer Profile</h1>
+    <header class="site-header">
+        <div class="container">
 
-        <p>
-            Computer Science Student | Full Stack Development Intern
-        </p>
+            <div class="brand">
+                <p class="site-logo">
+                    NexaTech <span>Solutions</span>
+                </p>
 
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="registration.html">Register</a></li>
-                <li>
-                    <a href="profile.html" aria-current="page">
-                        My Profile
-                    </a>
-                </li>
-            </ul>
-        </nav>
+                <p class="tagline">
+                    Innovating Your Digital Future
+                </p>
+            </div>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    <li>
+                        <a href="profile.html" aria-current="page">
+                            My Profile
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" class="profile-page">
 
-        <section id="about-me">
-            <h2>About Me</h2>
+        <section id="about-me" class="profile-intro">
 
-            <figure>
+            <p class="section-label">MEET THE DEVELOPER</p>
+
+            <h1>Developer Profile</h1>
+
+            <p class="profile-subtitle">
+                Computer Science Student | Full Stack Development Intern
+            </p>
+
+            <figure class="profile-figure">
                 <img
                     src="images/developer-profile.jpg"
                     alt="Portrait of Hiba Abukaf"
@@ -57,23 +75,28 @@
                 </figcaption>
             </figure>
 
-            <p>
-                My name is Hiba Abukaf.
-                I am a Computer Science student
-                at Birzeit University.
-            </p>
+            <div class="profile-description">
+                <h2>About Me</h2>
 
-            <p>
-                I am interested in software development,
-                web technologies, and building
-                practical digital solutions.
-            </p>
+                <p>
+                    My name is Hiba Abukaf.
+                    I am a Computer Science student
+                    at Birzeit University.
+                </p>
+
+                <p>
+                    I am interested in software development,
+                    web technologies, and building
+                    practical digital solutions.
+                </p>
+            </div>
+
         </section>
 
-        <section id="skills">
+        <section id="skills" class="profile-card">
             <h2>Technical Skills</h2>
 
-            <ul>
+            <ul class="skills-list">
                 <li>Java Programming</li>
                 <li>HTML5 and Semantic Web Structure</li>
                 <li>SQL and Database Fundamentals</li>
@@ -82,13 +105,15 @@
             </ul>
         </section>
 
-        <section id="education">
+        <section id="education" class="profile-card">
             <h2>Education</h2>
 
-            <article>
+            <article class="profile-detail-card">
                 <h3>Bachelor of Computer Science</h3>
 
-                <p>Birzeit University</p>
+                <p class="profile-organization">
+                    Birzeit University
+                </p>
 
                 <p>
                     Field of Study: Computer Science
@@ -96,13 +121,15 @@
             </article>
         </section>
 
-        <section id="training">
+        <section id="training" class="profile-card">
             <h2>Professional Training</h2>
 
-            <article>
+            <article class="profile-detail-card">
                 <h3>Full Stack Web Development Internship</h3>
 
-                <p>Grids Apps</p>
+                <p class="profile-organization">
+                    Grids Apps
+                </p>
 
                 <p>
                     Developing practical skills in
@@ -113,34 +140,33 @@
             </article>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="profile-contact">
             <h2>Contact Me</h2>
 
             <p>
-                Email:
-                <a href="mailto:hbhabwkf7@gmail.com">
-                    Send Me an Email
-                </a>
+                Feel free to connect with me
+                through email or GitHub.
             </p>
 
-            <p>
-                GitHub:
+            <div class="profile-contact-links">
+                <a href="mailto:hbhabwkf7@gmail.com" class="btn">
+                    Send Me an Email
+                </a>
+
                 <a href="https://github.com/Hiba072"
+                   class="btn btn-secondary"
                    target="_blank"
                    rel="noopener noreferrer">
                     Visit My GitHub Profile
                 </a>
-            </p>
+            </div>
         </section>
 
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 NexaTech Solutions.</p>
-
-        <p>
-            Developer Profile | HTML5 Training Project
-        </p>
+        <p>Developer Profile | HTML5 Training Project</p>
     </footer>
 
 </body>

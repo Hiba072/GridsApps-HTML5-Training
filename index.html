@@ -11,284 +11,364 @@
           content="NexaTech Solutions is a fictional technology company providing web development, mobile applications, and custom digital solutions.">
 
     <title>NexaTech Solutions | Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <header class="site-header">
+        <div class="container">
 
-    <header>
-        <h1>NexaTech Solutions</h1>
+            <div class="brand">
+                <p class="site-logo">
+                    NexaTech <span>Solutions</span>
+                </p>
 
-        <p>Innovating Your Digital Future</p>
+                <p class="tagline">
+                    Innovating Your Digital Future
+                </p>
+            </div>
 
-        <nav aria-label="Main navigation">
-            <ul>
-                <li>
-                    <a href="index.html" aria-current="page">
-                        Home
-                    </a>
-                </li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="#why-us">Why Choose Us</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="registration.html">Register</a></li>
-                <li><a href="profile.html">My Profile</a></li>
-            </ul>
-        </nav>
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html" aria-current="page">Home</a>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    <li><a href="profile.html">My Profile</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" class="home-page">
 
-        <section id="hero">
-            <h2>Transforming Ideas Into Digital Solutions</h2>
+        <section id="hero" class="hero">
 
-            <p>
-                We help businesses grow through
-                innovative websites, applications,
-                and reliable software solutions.
-            </p>
+            <div class="container">
 
-            <figure>
-                <img
-                    src="images/company.jpg"
-                    alt="Software development team working together"
-                    width="600"
-                >
+                <p class="hero-label">
+                    WELCOME TO NEXATECH SOLUTIONS
+                </p>
 
-                <figcaption>
-                    Building innovative digital solutions
-                </figcaption>
-            </figure>
+                <h1>Transforming Ideas Into Digital Solutions</h1>
 
-            <p>
-                <a href="services.html">
-                    Explore Our Services
+                <p class="hero-description">
+                    We help businesses grow through
+                    innovative websites, applications,
+                    and reliable software solutions.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="services.html" class="btn">
+                        Explore Our Services
+                    </a>
+
+                    <a href="contact.html" class="btn btn-secondary">
+                        Get in Touch
+                    </a>
+                </div>
+
+                <figure class="hero-image">
+                    <img
+                        src="images/company.jpg"
+                        alt="Software development team working together"
+                        width="600"
+                    >
+
+                    <figcaption>
+                        Building innovative digital solutions
+                    </figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+
+        <div class="container home-content">
+
+            <section id="about" class="home-section">
+
+                <div class="section-heading">
+                    <p class="section-label">WHO WE ARE</p>
+                    <h2>About NexaTech</h2>
+                </div>
+
+                <div class="about-content">
+                    <p>
+                        NexaTech Solutions is a fictional
+                        technology company specializing in
+                        modern digital products and services.
+                    </p>
+
+                    <p>
+                        Our mission is to deliver accessible,
+                        efficient, and innovative technology
+                        solutions that support business growth.
+                    </p>
+
+                    <a href="about.html" class="btn">
+                        Learn More About NexaTech
+                    </a>
+                </div>
+
+            </section>
+
+            <section id="services" class="home-section">
+
+                <div class="section-heading">
+                    <p class="section-label">WHAT WE DO</p>
+                    <h2>Our Services</h2>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+                        <span class="card-icon" aria-hidden="true">⌘</span>
+
+                        <h3>Web Development</h3>
+
+                        <p>
+                            We build accessible and modern
+                            websites for businesses.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="card-icon" aria-hidden="true">▣</span>
+
+                        <h3>Mobile App Development</h3>
+
+                        <p>
+                            We develop user-friendly mobile
+                            applications for different needs.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="card-icon" aria-hidden="true">✦</span>
+
+                        <h3>Custom Software Solutions</h3>
+
+                        <p>
+                            We create software systems that
+                            improve business operations.
+                        </p>
+                    </article>
+
+                </div>
+
+                <div class="section-action">
+                    <a href="services.html" class="btn">
+                        View All Services
+                    </a>
+                </div>
+
+            </section>
+
+            <section id="why-us" class="home-section info-card">
+
+                <div class="section-heading">
+                    <p class="section-label">WHY NEXATECH</p>
+                    <h2>Why Choose NexaTech?</h2>
+                </div>
+
+                <p>
+                    We focus on creating meaningful
+                    digital experiences through
+                    quality, collaboration, and innovation.
+                </p>
+
+                <ul class="benefits-list">
+                    <li>Customer-focused solutions</li>
+                    <li>Modern development practices</li>
+                    <li>Accessible web experiences</li>
+                    <li>Reliable technical support</li>
+                </ul>
+
+            </section>
+
+            <section id="our-commitment" class="home-section">
+
+                <div class="section-heading">
+                    <p class="section-label">OUR STANDARDS</p>
+                    <h2>Our Commitment to Quality</h2>
+                </div>
+
+                <p>
+                    At NexaTech Solutions, we believe
+                    that successful digital products
+                    are built through collaboration,
+                    accessibility, and attention to detail.
+                </p>
+
+                <h3>Our Development Principles</h3>
+
+                <ul class="principles-list">
+
+                    <li>
+                        <strong>User-Centered Design:</strong>
+                        We prioritize clear navigation
+                        and meaningful user experiences.
+                    </li>
+
+                    <li>
+                        <strong>Accessibility:</strong>
+                        We aim to create digital solutions
+                        that support different user needs.
+                    </li>
+
+                    <li>
+                        <strong>Maintainability:</strong>
+                        We focus on organized code and
+                        sustainable software development.
+                    </li>
+
+                    <li>
+                        <strong>Quality Assurance:</strong>
+                        We emphasize testing, validation,
+                        and continuous improvement.
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section id="sample-work" class="home-section">
+
+                <div class="section-heading">
+                    <p class="section-label">OUR PROJECTS</p>
+                    <h2>Our Work in Practice</h2>
+                </div>
+
+                <p>
+                    The following examples demonstrate
+                    the development concepts applied
+                    in this HTML5 training project.
+                </p>
+
+                <div class="work-grid">
+
+                    <article class="work-card">
+
+                        <h3>Multi-Page Corporate Website</h3>
+
+                        <p>
+                            A connected website featuring
+                            company information, service pages,
+                            blog content, and accessible navigation.
+                        </p>
+
+                        <p>
+                            <strong>Demonstrated Skills:</strong>
+                            Semantic HTML5, relative paths,
+                            and multi-page architecture.
+                        </p>
+
+                        <a href="about.html" class="btn">
+                            Explore Website Structure
+                        </a>
+
+                    </article>
+
+                    <article class="work-card">
+
+                        <h3>Accessible HTML Forms</h3>
+
+                        <p>
+                            Contact and registration forms
+                            demonstrating meaningful labels,
+                            grouped controls, and native validation.
+                        </p>
+
+                        <p>
+                            <strong>Demonstrated Skills:</strong>
+                            HTML5 forms, accessibility,
+                            and browser-based validation.
+                        </p>
+
+                        <a href="registration.html" class="btn">
+                            View Registration Form
+                        </a>
+
+                    </article>
+
+                </div>
+
+                <p class="project-disclaimer">
+                    These are educational demonstrations
+                    created for the NexaTech training project,
+                    not commercial client projects.
+                </p>
+
+            </section>
+
+            <section id="latest-insights" class="home-section">
+
+                <div class="section-heading">
+                    <p class="section-label">FROM OUR BLOG</p>
+                    <h2>Latest Insights</h2>
+                </div>
+
+                <p>
+                    Explore our latest articles about
+                    technology, web development,
+                    and digital innovation.
+                </p>
+
+                <article class="insight-card">
+
+                    <p class="section-label">WEB DEVELOPMENT</p>
+
+                    <h3>
+                        Why Every Business Needs a Modern Website
+                    </h3>
+
+                    <p>
+                        Discover how a professional website
+                        helps businesses build credibility,
+                        reach customers, and grow online.
+                    </p>
+
+                    <a href="blog.html" class="btn">
+                        Explore Our Blog
+                    </a>
+
+                </article>
+
+            </section>
+
+            <section id="contact" class="contact-banner">
+
+                <h2>Let's Work Together</h2>
+
+                <p>
+                    Have a project in mind?
+                    Contact our team to discuss your
+                    ideas and digital requirements.
+                </p>
+
+                <a href="contact.html" class="btn">
+                    Contact Our Team
                 </a>
-            </p>
 
-            <p>
-                <a href="contact.html">
-                    Get in Touch
-                </a>
-            </p>
-        </section>
+            </section>
 
-        <section id="about">
-            <h2>About NexaTech</h2>
-
-            <p>
-                NexaTech Solutions is a fictional
-                technology company specializing in
-                modern digital products and services.
-            </p>
-
-            <p>
-                Our mission is to deliver accessible,
-                efficient, and innovative technology
-                solutions that support business growth.
-            </p>
-
-            <a href="about.html">
-                Learn More About NexaTech
-            </a>
-        </section>
-
-        <section id="services">
-            <h2>Our Services</h2>
-
-            <article>
-                <h3>Web Development</h3>
-
-                <p>
-                    We build accessible and modern
-                    websites for businesses.
-                </p>
-            </article>
-
-            <article>
-                <h3>Mobile App Development</h3>
-
-                <p>
-                    We develop user-friendly mobile
-                    applications for different needs.
-                </p>
-            </article>
-
-            <article>
-                <h3>Custom Software Solutions</h3>
-
-                <p>
-                    We create software systems that
-                    improve business operations.
-                </p>
-            </article>
-
-            <a href="services.html">
-                View All Services
-            </a>
-        </section>
-
-        <section id="why-us">
-            <h2>Why Choose NexaTech?</h2>
-
-            <p>
-                We focus on creating meaningful
-                digital experiences through
-                quality, collaboration, and innovation.
-            </p>
-
-            <ul>
-                <li>Customer-focused solutions</li>
-                <li>Modern development practices</li>
-                <li>Accessible web experiences</li>
-                <li>Reliable technical support</li>
-            </ul>
-        </section>
-
-        <section id="our-commitment">
-            <h2>Our Commitment to Quality</h2>
-
-            <p>
-                At NexaTech Solutions, we believe
-                that successful digital products
-                are built through collaboration,
-                accessibility, and attention to detail.
-            </p>
-
-            <h3>Our Development Principles</h3>
-
-            <ul>
-                <li>
-                    <strong>User-Centered Design:</strong>
-                    We prioritize clear navigation
-                    and meaningful user experiences.
-                </li>
-
-                <li>
-                    <strong>Accessibility:</strong>
-                    We aim to create digital solutions
-                    that support different user needs.
-                </li>
-
-                <li>
-                    <strong>Maintainability:</strong>
-                    We focus on organized code and
-                    sustainable software development.
-                </li>
-
-                <li>
-                    <strong>Quality Assurance:</strong>
-                    We emphasize testing, validation,
-                    and continuous improvement.
-                </li>
-            </ul>
-        </section>
-
-        <section id="sample-work">
-            <h2>Our Work in Practice</h2>
-
-            <p>
-                The following examples demonstrate
-                the development concepts applied
-                in this HTML5 training project.
-            </p>
-
-            <article>
-                <h3>Multi-Page Corporate Website</h3>
-
-                <p>
-                    A connected website featuring
-                    company information, service pages,
-                    blog content, and accessible navigation.
-                </p>
-
-                <p>
-                    <strong>Demonstrated Skills:</strong>
-                    Semantic HTML5, relative paths,
-                    and multi-page architecture.
-                </p>
-
-                <a href="about.html">
-                    Explore the Website Structure
-                </a>
-            </article>
-
-            <article>
-                <h3>Accessible HTML Forms</h3>
-
-                <p>
-                    Contact and registration forms
-                    demonstrating meaningful labels,
-                    grouped controls, and native validation.
-                </p>
-
-                <p>
-                    <strong>Demonstrated Skills:</strong>
-                    HTML5 forms, accessibility,
-                    and browser-based validation.
-                </p>
-
-                <a href="registration.html">
-                    View Registration Form
-                </a>
-            </article>
-
-            <p>
-                These are educational demonstrations
-                created for the NexaTech training project,
-                not commercial client projects.
-            </p>
-        </section>
-
-        <section id="latest-insights">
-            <h2>Latest Insights</h2>
-
-            <p>
-                Explore our latest articles about
-                technology, web development,
-                and digital innovation.
-            </p>
-
-            <article>
-                <h3>
-                    Why Every Business Needs a Modern Website
-                </h3>
-
-                <p>
-                    Discover how a professional website
-                    helps businesses build credibility,
-                    reach customers, and grow online.
-                </p>
-
-                <a href="blog.html">
-                    Explore Our Blog
-                </a>
-            </article>
-        </section>
-
-        <section id="contact">
-            <h2>Let's Work Together</h2>
-
-            <p>
-                Have a project in mind?
-                Contact our team to discuss your
-                ideas and digital requirements.
-            </p>
-
-            <a href="contact.html">
-                Contact Our Team
-            </a>
-        </section>
+        </div>
 
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 NexaTech Solutions.</p>
-
         <p>All rights reserved.</p>
-
         <p>HTML5 Full Stack Training Project.</p>
     </footer>
 

@@ -1,47 +1,45 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Explore NexaTech Solutions web development, mobile application, custom software services, and sample pricing plans.">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore NexaTech Solutions web development, mobile application, custom software services, and sample pricing plans.">
     <title>Our Services | NexaTech Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>Our Services</h1>
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <p class="site-logo">
+                    NexaTech <span>Solutions</span>
+                </p>
+                <p class="tagline">Innovating Your Digital Future</p>
+            </div>
 
-        <p>Technology Solutions Designed for Your Business</p>
-
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li>
-                    <a href="services.html" aria-current="page">
-                        Services
-                    </a>
-                </li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="registration.html">Register</a></li>
-                <li><a href="profile.html">My Profile</a></li>
-            </ul>
-        </nav>
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" aria-current="page">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    <li><a href="profile.html">My Profile</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" class="services-page">
 
-        <section id="introduction">
+        <section id="introduction" class="services-intro">
+            <p class="section-label">WHAT WE OFFER</p>
+            <h1>Technology Solutions Designed for Your Business</h1>
             <h2>What We Offer</h2>
-
             <p>
                 NexaTech Solutions provides digital
                 services that help businesses improve
@@ -50,212 +48,197 @@
             </p>
         </section>
 
-        <section id="service-details">
+        <section id="service-details" class="services-section">
             <h2>Our Digital Services</h2>
 
-            <article>
-                <h3>Web Development</h3>
+            <div class="service-details-grid">
+                <article class="service-detail-card">
+                    <span class="card-icon" aria-hidden="true">⌘</span>
+                    <h3>Web Development</h3>
+                    <p>
+                        We create modern, accessible,
+                        and user-friendly websites
+                        tailored to business needs.
+                    </p>
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Semantic HTML5 structure</li>
+                        <li>Accessible navigation</li>
+                        <li>Business websites and portfolios</li>
+                        <li>Maintainable website architecture</li>
+                    </ul>
+                </article>
 
-                <p>
-                    We create modern, accessible,
-                    and user-friendly websites
-                    tailored to business needs.
-                </p>
+                <article class="service-detail-card">
+                    <span class="card-icon" aria-hidden="true">▣</span>
+                    <h3>Mobile Application Development</h3>
+                    <p>
+                        We design mobile application
+                        solutions that help businesses
+                        connect with their customers.
+                    </p>
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>User-friendly application interfaces</li>
+                        <li>Business-focused functionality</li>
+                        <li>Cross-platform planning</li>
+                        <li>Application maintenance support</li>
+                    </ul>
+                </article>
 
-                <h4>Key Features</h4>
-
-                <ul>
-                    <li>Semantic HTML5 structure</li>
-                    <li>Accessible navigation</li>
-                    <li>Business websites and portfolios</li>
-                    <li>Maintainable website architecture</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Mobile Application Development</h3>
-
-                <p>
-                    We design mobile application
-                    solutions that help businesses
-                    connect with their customers.
-                </p>
-
-                <h4>Key Features</h4>
-
-                <ul>
-                    <li>User-friendly application interfaces</li>
-                    <li>Business-focused functionality</li>
-                    <li>Cross-platform planning</li>
-                    <li>Application maintenance support</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Custom Software Solutions</h3>
-
-                <p>
-                    We develop customized software
-                    concepts for organizations
-                    seeking more efficient workflows.
-                </p>
-
-                <h4>Key Features</h4>
-
-                <ul>
-                    <li>Business process improvement</li>
-                    <li>Custom system planning</li>
-                    <li>Software integration planning</li>
-                    <li>Scalable solution design</li>
-                </ul>
-            </article>
+                <article class="service-detail-card">
+                    <span class="card-icon" aria-hidden="true">✦</span>
+                    <h3>Custom Software Solutions</h3>
+                    <p>
+                        We develop customized software
+                        concepts for organizations
+                        seeking more efficient workflows.
+                    </p>
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Business process improvement</li>
+                        <li>Custom system planning</li>
+                        <li>Software integration planning</li>
+                        <li>Scalable solution design</li>
+                    </ul>
+                </article>
+            </div>
         </section>
 
-        <section id="service-comparison">
+        <section id="service-comparison" class="services-section">
             <h2>Service Comparison</h2>
-
             <p>
                 Compare our main service categories
                 to identify the most suitable
                 solution for your business.
             </p>
 
-            <table>
-                <caption>
-                    Overview of NexaTech Digital Services
-                </caption>
-
-                <thead>
-                    <tr>
-                        <th scope="col">Service</th>
-                        <th scope="col">Primary Purpose</th>
-                        <th scope="col">Typical Deliverable</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <th scope="row">Web Development</th>
-                        <td>Improve online presence</td>
-                        <td>Business Website</td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">Mobile Applications</th>
-                        <td>Support mobile users</td>
-                        <td>Mobile App</td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">Custom Software</th>
-                        <td>Improve business processes</td>
-                        <td>Custom Software System</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-wrapper">
+                <table class="services-table">
+                    <caption>Overview of NexaTech Digital Services</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Service</th>
+                            <th scope="col">Primary Purpose</th>
+                            <th scope="col">Typical Deliverable</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Web Development</th>
+                            <td>Improve online presence</td>
+                            <td>Business Website</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mobile Applications</th>
+                            <td>Support mobile users</td>
+                            <td>Mobile App</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Custom Software</th>
+                            <td>Improve business processes</td>
+                            <td>Custom Software System</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <section id="pricing">
+        <section id="pricing" class="services-section">
             <h2>Website Development Plans</h2>
-
             <p>
                 Compare our demonstration website
                 development packages and explore
                 the features offered at each level.
             </p>
 
-            <table>
-                <caption>
-                    NexaTech Website Packages -
-                    Sample Pricing in USD
-                </caption>
+            <div class="pricing-grid">
 
-                <thead>
-                    <tr>
-                        <th scope="col">Feature</th>
-                        <th scope="col">Starter</th>
-                        <th scope="col">Business</th>
-                        <th scope="col">Premium</th>
-                    </tr>
-                </thead>
+                <article class="pricing-card">
+                    <h3>Starter</h3>
+                    <p class="pricing-price">$300</p>
+                    <p class="pricing-description">For simple websites</p>
 
-                <tbody>
-                    <tr>
-                        <th scope="row">Sample Price</th>
-                        <td>$300</td>
-                        <td>$700</td>
-                        <td>$1,200</td>
-                    </tr>
+                    <ul>
+                        <li>Up to 3 Pages</li>
+                        <li>Contact Form Included</li>
+                        <li>Blog Not Included</li>
+                        <li>Basic Accessibility Review</li>
+                        <li>1 Content Update</li>
+                    </ul>
 
-                    <tr>
-                        <th scope="row">Number of Pages</th>
-                        <td>Up to 3</td>
-                        <td>Up to 7</td>
-                        <td>Up to 15</td>
-                    </tr>
+                    <a href="contact.html" class="btn">
+                        Get Started
+                    </a>
+                </article>
 
-                    <tr>
-                        <th scope="row">Contact Form</th>
-                        <td>Included</td>
-                        <td>Included</td>
-                        <td>Included</td>
-                    </tr>
+                <article class="pricing-card pricing-featured">
+                    <p class="pricing-badge">RECOMMENDED</p>
+                    <h3>Business</h3>
+                    <p class="pricing-price">$700</p>
+                    <p class="pricing-description">For growing businesses</p>
 
-                    <tr>
-                        <th scope="row">Blog Pages</th>
-                        <td>Not Included</td>
-                        <td>Included</td>
-                        <td>Included</td>
-                    </tr>
+                    <ul>
+                        <li>Up to 7 Pages</li>
+                        <li>Contact Form Included</li>
+                        <li>Blog Included</li>
+                        <li>Standard Accessibility Review</li>
+                        <li>3 Content Updates</li>
+                    </ul>
 
-                    <tr>
-                        <th scope="row">Accessibility Review</th>
-                        <td>Basic</td>
-                        <td>Standard</td>
-                        <td>Extended</td>
-                    </tr>
+                    <a href="contact.html" class="btn">
+                        Choose Business
+                    </a>
+                </article>
 
-                    <tr>
-                        <th scope="row">Content Updates</th>
-                        <td>1 Update</td>
-                        <td>3 Updates</td>
-                        <td>5 Updates</td>
-                    </tr>
-                </tbody>
-            </table>
+                <article class="pricing-card">
+                    <h3>Premium</h3>
+                    <p class="pricing-price">$1,200</p>
+                    <p class="pricing-description">For larger websites</p>
 
-            <p>
+                    <ul>
+                        <li>Up to 15 Pages</li>
+                        <li>Contact Form Included</li>
+                        <li>Blog Included</li>
+                        <li>Extended Accessibility Review</li>
+                        <li>5 Content Updates</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn">
+                        Choose Premium
+                    </a>
+                </article>
+
+            </div>
+
+            <p class="pricing-notice">
                 <strong>Note:</strong>
                 All packages and prices are fictional
                 and are provided for HTML5 training
                 and demonstration purposes only.
             </p>
 
-            <p>
-                <a href="contact.html">
-                    Ask About Our Services
-                </a>
-            </p>
+            <a href="contact.html" class="btn">
+                Ask About Our Services
+            </a>
         </section>
 
-        <section id="request-service">
+        <section id="request-service" class="contact-banner">
             <h2>Let's Discuss Your Project</h2>
-
             <p>
                 Looking for a digital solution
                 that fits your business needs?
                 Contact our team to discuss
                 your project requirements.
             </p>
-
-            <a href="contact.html">
+            <a href="contact.html" class="btn">
                 Request a Consultation
             </a>
         </section>
 
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 NexaTech Solutions.</p>
         <p>All rights reserved.</p>
         <p>HTML5 Full Stack Training Project.</p>

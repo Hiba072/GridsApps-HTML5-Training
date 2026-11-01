@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
@@ -11,38 +12,59 @@
           content="Learn about NexaTech Solutions, our mission, vision, values, and commitment to delivering innovative digital solutions.">
 
     <title>About Us | NexaTech Solutions</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>About NexaTech Solutions</h1>
+    <header class="site-header">
+        <div class="container">
 
-        <p>Innovating Your Digital Future</p>
+            <div class="brand">
+                <h1 class="site-logo">
+                    NexaTech <span>Solutions</span>
+                </h1>
 
+                <p class="tagline">
+                    Innovating Your Digital Future
+                </p>
+            </div>
 
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="about.html" aria-current="page">
-                        About Us
-                    </a>
-                </li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="registration.html">Register</a></li>
-                <li><a href="profile.html">My Profile</a></li>
-            </ul>
-        </nav>
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" aria-current="page">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="registration.html">Register</a>
+                    </li>
+                    <li>
+                        <a href="profile.html">My Profile</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
-
 
     <main id="main-content">
 
-
-        <section id="company-overview">
+        <section id="company-overview" class="info-card">
             <h2>Who We Are</h2>
 
             <p>
@@ -60,8 +82,7 @@
             </p>
         </section>
 
-
-        <section id="mission">
+        <section id="mission" class="info-card">
             <h2>Our Mission</h2>
 
             <p>
@@ -72,8 +93,7 @@
             </p>
         </section>
 
-
-        <section id="vision">
+        <section id="vision" class="info-card">
             <h2>Our Vision</h2>
 
             <p>
@@ -84,8 +104,7 @@
             </p>
         </section>
 
-
-        <section id="values">
+        <section id="values" class="info-card">
             <h2>Our Core Values</h2>
 
             <ul>
@@ -116,7 +135,8 @@
         </section>
 
 
-        <section id="expertise">
+        <!-- EXPERTISE -->
+        <section id="expertise" class="info-card">
             <h2>What We Do</h2>
 
             <p>
@@ -132,14 +152,13 @@
             </ul>
 
             <p>
-                <a href="services.html">
+                <a href="services.html" class="btn">
                     Explore Our Services
                 </a>
             </p>
         </section>
 
-
-        <section id="get-in-touch">
+        <section id="get-in-touch" class="contact-banner">
             <h2>Let's Build Something Together</h2>
 
             <p>
@@ -148,15 +167,14 @@
                 your ideas and requirements.
             </p>
 
-            <a href="contact.html">
+            <a href="contact.html" class="btn">
                 Contact NexaTech Solutions
             </a>
         </section>
 
     </main>
 
-
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 NexaTech Solutions.</p>
         <p>All rights reserved.</p>
         <p>HTML5 Full Stack Training Project.</p>

@@ -11,57 +11,71 @@
           content="Discover how modern websites help businesses build trust, improve accessibility, and support digital growth.">
 
     <title>Why Every Business Needs a Modern Website | NexaTech Solutions</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <p><strong>NexaTech Solutions</strong></p>
-        <p>Innovating Your Digital Future</p>
+    <header class="site-header">
+        <div class="container">
 
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li>
-                    <a href="blog.html" aria-current="page">
-                        Blog
-                    </a>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="registration.html">Register</a></li>
-                <li><a href="profile.html">My Profile</a></li>
-            </ul>
-        </nav>
+            <div class="brand">
+                <p class="site-logo">
+                    NexaTech <span>Solutions</span>
+                </p>
+
+                <p class="tagline">
+                    Innovating Your Digital Future
+                </p>
+            </div>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li>
+                        <a href="blog.html" aria-current="page">
+                            Blog
+                        </a>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    <li><a href="profile.html">My Profile</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" class="blog-page">
 
-        <article>
+        <article class="blog-article">
 
-            <header>
+            <header class="article-header">
+                <p class="article-category">
+                    Web Development
+                </p>
+
                 <h1>Why Every Business Needs a Modern Website</h1>
 
-                <p>
-                    Written by:
-                    <strong>NexaTech Editorial Team</strong>
-                </p>
+                <div class="article-meta">
+                    <p>
+                        Written by:
+                        <strong>NexaTech Editorial Team</strong>
+                    </p>
 
-                <p>
-                    Published on:
-                    <time datetime="2026-10-15">
-                        October 15, 2026
-                    </time>
-                </p>
-
-                <p>
-                    Category:
-                    <strong>Web Development</strong>
-                </p>
+                    <p>
+                        Published on:
+                        <time datetime="2026-10-15">
+                            October 15, 2026
+                        </time>
+                    </p>
+                </div>
             </header>
 
-            <section>
+            <section class="article-section">
                 <h2>Introduction</h2>
 
                 <p>
@@ -79,7 +93,7 @@
                 </p>
             </section>
 
-            <section>
+            <section class="article-section">
                 <h2>Building Trust and Credibility</h2>
 
                 <p>
@@ -95,7 +109,7 @@
                 </p>
             </section>
 
-            <section>
+            <section class="article-section">
                 <h2>Improving Accessibility and Usability</h2>
 
                 <p>
@@ -112,7 +126,7 @@
 
                 <h3>Important Website Features</h3>
 
-                <ul>
+                <ul class="feature-list">
                     <li>Clear and consistent navigation</li>
                     <li>Logical heading hierarchy</li>
                     <li>Descriptive links</li>
@@ -121,7 +135,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section class="article-section">
                 <h2>Supporting Business Growth</h2>
 
                 <p>
@@ -138,7 +152,7 @@
                 </p>
             </section>
 
-            <section>
+            <section class="article-section">
                 <h2>Conclusion</h2>
 
                 <p>
@@ -157,9 +171,11 @@
 
         </article>
 
-        <aside aria-labelledby="related-heading">
+        <aside class="related-articles" aria-labelledby="related-heading">
 
-            <h2 id="related-heading">Related Articles and Services</h2>
+            <h2 id="related-heading">
+                Related Articles and Services
+            </h2>
 
             <ul>
                 <li>
@@ -180,19 +196,18 @@
                     </a>
                 </li>
             </ul>
+
         </aside>
 
-        <nav aria-label="Article navigation">
-            <p>
-                <a href="blog.html">
-                    Back to All Articles
-                </a>
-            </p>
+        <nav class="article-navigation" aria-label="Article navigation">
+            <a href="blog.html" class="btn">
+                Back to All Articles
+            </a>
         </nav>
 
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 NexaTech Solutions.</p>
         <p>All rights reserved.</p>
         <p>HTML5 Full Stack Training Project.</p>
