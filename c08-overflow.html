@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C08 | Responsive Overflow Repair</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/c08.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <p class="site-logo">NexaTech <span>Solutions</span></p>
+        </div>
+    </header>
+    <main class="c08-page">
+        <h1>C08 — Responsive Overflow Repair</h1>
+        <p>The original layout uses three fixed 400px columns plus gaps. The fixed width causes overflow on narrow screens. The repaired layout uses flexible CSS Grid columns.</p>
+        <section class="c08-panel">
+            <h2>Before — Fixed Width Grid</h2>
+            <p>The boxed preview scrolls horizontally to demonstrate the defect without breaking the page itself.</p>
+            <div class="c08-preview" tabindex="0" aria-label="Scrollable example of broken fixed-width card grid">
+                <div class="c08-broken">
+                    <article>Web Development</article>
+                    <article>Mobile Applications</article>
+                    <article>Custom Software</article>
+                </div>
+            </div>
+        </section>
+        <section class="c08-panel">
+            <h2>After — Responsive Grid</h2>
+            <p>Cards now reflow into one, two, or three columns as space becomes available.</p>
+            <div class="c08-fixed">
+                <article>Web Development</article>
+                <article>Mobile Applications</article>
+                <article>Custom Software</article>
+            </div>
+        </section>
+        <section class="c08-panel">
+            <h2>Repair Explanation</h2>
+            <p><strong>Problem:</strong> <code>grid-template-columns: repeat(3, 400px)</code> forces at least 1248px including gaps.</p>
+            <p><strong>Fix:</strong> Replace fixed columns with <code>repeat(auto-fit, minmax(min(100%, 260px), 1fr))</code>.</p>
+            <p><strong>Verification:</strong> Resize to 375px, 768px, and 1440px. The page should have no horizontal overflow. Only the intentionally broken example has an internal scrollbar.</p>
+        </section>
+    </main>
+</body>
+</html>
