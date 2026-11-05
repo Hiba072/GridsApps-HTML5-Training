@@ -5,27 +5,30 @@
 **Developer:** Hiba Abukaf  
 **Training:** HTML5 & CSS3 Foundation Track  
 **Project:** Multi-Page Corporate Website  
-**Completed Work:** Day 01, Day 02 & Day 03
+**Completed Work:** Day 01, Day 02, Day 03 & Day 04
 
 ## Project Overview
 
 NexaTech Solutions is a fictional technology company website developed as part of the Grids Apps Full Stack Development Internship.
 
-The project demonstrates semantic HTML5, accessible content structure, multi-page navigation, HTML forms, native validation, tables, media integration, and professional website styling using CSS3.
+The project demonstrates semantic HTML5, accessible content structure, multi-page navigation, HTML forms, native validation, tables, media integration, CSS styling, and responsive web design.
 
-The website uses a consistent design system with reusable CSS components, colors, typography, spacing, and responsive styling.
+The website uses a consistent visual design system with reusable components, CSS variables, Flexbox, Grid, and media queries to support different screen sizes.
 
 ## Technologies Used
 
 - HTML5
 - CSS3
 - Semantic HTML
-- CSS Selectors and Specificity
-- CSS Box Model
+- CSS Selectors, Cascade, Specificity & Inheritance
+- CSS Box Model and Box Sizing
 - CSS Custom Properties (Variables)
-- Flexbox and CSS Grid
+- Flexbox
+- CSS Grid
 - Media Queries
+- Mobile-First Responsive Design
 - HTML5 Native Form Validation
+- Chrome Developer Tools
 - Git & GitHub
 - Visual Studio Code
 
@@ -61,7 +64,7 @@ The second training day focused on developing connected website pages and implem
 
 ## Day 03 — CSS Foundations, Cascade & Box Model
 
-The third training day focused on styling the existing HTML5 website using an external CSS stylesheet, creating a reusable visual design system, and understanding CSS cascade and specificity.
+The third training day focused on styling the existing HTML5 website using an external CSS stylesheet, creating a reusable design system, and understanding CSS cascade and specificity.
 
 ### Implemented Features
 
@@ -78,8 +81,6 @@ The third training day focused on styling the existing HTML5 website using an ex
 - Blog and gallery card layouts
 - Service comparison table styling
 - Three-tier pricing cards with a highlighted recommended plan
-- Flexbox and CSS Grid layouts
-- Basic responsive styling using media queries
 - Consistent footer design
 - CSS selector organization and specificity improvements
 
@@ -98,6 +99,92 @@ It also covers how source order affects declarations with equal specificity and 
 - CSS specificity debugging practice
 - Updated GitHub repository
 
+## Day 04 — Flexbox, Grid & Responsive Design
+
+The fourth training day focused on improving the website's responsiveness using mobile-first CSS layouts, Flexbox, Grid, and media queries.
+
+The objective was to make the core website layouts adapt to mobile, tablet, and desktop screens while reducing horizontal overflow.
+
+### Implemented Features
+
+- Responsive navigation bar using Flexbox
+- Flexible navigation alignment and wrapping
+- Responsive card layouts using CSS Grid
+- Mobile-first layout improvements
+- Media queries for different viewport widths
+- Responsive service, blog, gallery, and pricing cards
+- Flexible content widths and spacing
+- Responsive typography and images
+- Improved layout behavior on narrow screens
+- Overflow prevention using flexible sizing
+- Responsive design adjustments without CSS frameworks
+
+### Responsive Navbar
+
+The navigation system uses Flexbox to organize navigation links and adapt their arrangement according to the available screen width.
+
+The mobile layout organizes links into a compact structure, while wider layouts provide more horizontal space.
+
+### Responsive Card Grid
+
+CSS Grid is used to create responsive card layouts.
+
+The number of columns adjusts according to screen width, allowing cards to adapt rather than remain fixed at desktop dimensions.
+
+The grid uses flexible sizing techniques including:
+
+- `display: grid`
+- `grid-template-columns`
+- `repeat()`
+- `auto-fit`
+- `minmax()`
+- `gap`
+
+### Challenge C08 — Responsive Overflow Repair
+
+A demonstration of horizontal overflow was created to practice identifying and repairing broken responsive layouts.
+
+**Problem:**
+
+A layout with fixed-width grid columns can exceed the available viewport width on smaller devices.
+
+**Solution:**
+
+Replace rigid column widths with a flexible grid using `auto-fit`, `minmax()`, and responsive sizing.
+
+**Result:**
+
+The repaired demonstration adapts its columns to the available space without page-level horizontal overflow at the tested viewport widths.
+
+### Flexbox vs Grid
+
+**Flexbox** is mainly used for one-dimensional layouts, such as navigation bars, button groups, and alignment of elements along one axis.
+
+**CSS Grid** is mainly used for two-dimensional layouts, such as service cards, pricing cards, blog cards, and gallery grids.
+
+Both layout systems are used according to the structure and requirements of each component.
+
+### Responsive Testing
+
+The following viewport widths are used for responsive testing:
+
+| Device Type | Viewport Width |
+|---|---|
+| Mobile | 375px |
+| Tablet | 768px |
+| Desktop | 1440px |
+
+Browser Developer Tools are used to inspect layout behavior, navigation, and potential overflow problems.
+
+### Day 04 Deliverables
+
+- Responsive navigation bar
+- Responsive card grid
+- C08 overflow repair demonstration
+- Mobile, tablet, and desktop screenshots
+- Explanation of Flexbox versus Grid
+- Updated project documentation
+
 ## Project Structure
 
 ```text
@@ -111,9 +198,15 @@ It also covers how source order affects declarations with equal specificity and 
 ├── contact.html
 ├── registration.html
 ├── gallery.html
+├── c08-overflow.html
 ├── css/
-│   └── style.css
+│   ├── style.css
+│   └── c08.css
 ├── images/
+├── screenshots/
+│   ├── mobile.png
+│   ├── tablet.png
+│   └── desktop.png
 └── README.md
 ```
 
@@ -128,18 +221,14 @@ It also covers how source order affects declarations with equal specificity and 
 | H05 | Pricing Comparison |
 | H06 | Media & Gallery |
 
-## CSS3 Learning Outcomes
+## CSS3 Challenges
 
-- Applying CSS using external stylesheets
-- Understanding cascade, inheritance, and specificity
-- Using element, class, ID, and pseudo-class selectors
-- Applying the CSS Box Model
-- Managing sizing with border-box
-- Creating reusable design tokens
-- Styling typography, colors, backgrounds, borders, and shadows
-- Building layouts using Flexbox and Grid
-- Applying basic responsive adjustments
-- Debugging CSS conflicts using browser Developer Tools
+| Challenge | Description |
+|---|---|
+| Day 03 | CSS Specificity Debugging |
+| Day 04 | Responsive Navbar |
+| Day 04 | Responsive Card Grid |
+| C08 | Responsive Overflow Repair |
 
 ## Accessibility Practices
 
@@ -152,6 +241,7 @@ It also covers how source order affects declarations with equal specificity and 
 - Navigation using meaningful links
 - Visible keyboard focus styles
 - Readable typography and consistent spacing
+- Responsive layouts supporting different viewport sizes
 
 ## How to Run
 
@@ -161,7 +251,10 @@ It also covers how source order affects declarations with equal specificity and 
 4. Navigate through the website using the main navigation menu.
 5. Verify that the external CSS stylesheet loads correctly.
 6. Test the contact and registration forms using fictional data.
-7. Resize the browser window to review the website layout.
+7. Open Chrome Developer Tools.
+8. Enable Device Toolbar using `Ctrl + Shift + M`.
+9. Test the website at mobile, tablet, and desktop viewport widths.
+10. Open `c08-overflow.html` to view the responsive overflow repair demonstration.
 
 ## Important Notes
 
@@ -172,6 +265,8 @@ The website uses CSS3 without Bootstrap, Tailwind CSS, or other CSS frameworks.
 The contact and registration forms demonstrate browser-side validation only. They do not create real accounts, send messages, or store submitted information.
 
 Do not enter real passwords or sensitive personal information.
+
+All website pricing plans are fictional and are provided for educational purposes.
 
 ## Author
 
