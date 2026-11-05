@@ -4,8 +4,8 @@
 
 **Developer:** Hiba Abukaf  
 **Training:** HTML5 & CSS3 Foundation Track  
-**Project:** Multi-Page Corporate Website  
-**Completed Work:** Day 01, Day 02, Day 03 & Day 04
+**Project:** Responsive Multi-Page Corporate Website  
+**Project Development:** Day 01 – Day 05
 
 ## Project Overview
 
@@ -13,7 +13,9 @@ NexaTech Solutions is a fictional technology company website developed as part o
 
 The project demonstrates semantic HTML5, accessible content structure, multi-page navigation, HTML forms, native validation, tables, media integration, CSS styling, and responsive web design.
 
-The website uses a consistent visual design system with reusable components, CSS variables, Flexbox, Grid, and media queries to support different screen sizes.
+The website uses a consistent visual design system with reusable components, CSS variables, Flexbox, Grid, and media queries to support mobile, tablet, and desktop devices.
+
+The final project consists of **10 main website pages**, along with a separate responsive debugging challenge.
 
 ## Technologies Used
 
@@ -23,11 +25,11 @@ The website uses a consistent visual design system with reusable components, CSS
 - CSS Selectors, Cascade, Specificity & Inheritance
 - CSS Box Model and Box Sizing
 - CSS Custom Properties (Variables)
-- Flexbox
-- CSS Grid
+- Flexbox and CSS Grid
 - Media Queries
 - Mobile-First Responsive Design
 - HTML5 Native Form Validation
+- Accessibility and Keyboard Focus Styling
 - Chrome Developer Tools
 - Git & GitHub
 - Visual Studio Code
@@ -103,8 +105,6 @@ It also covers how source order affects declarations with equal specificity and 
 
 The fourth training day focused on improving the website's responsiveness using mobile-first CSS layouts, Flexbox, Grid, and media queries.
 
-The objective was to make the core website layouts adapt to mobile, tablet, and desktop screens while reducing horizontal overflow.
-
 ### Implemented Features
 
 - Responsive navigation bar using Flexbox
@@ -176,14 +176,92 @@ The following viewport widths are used for responsive testing:
 
 Browser Developer Tools are used to inspect layout behavior, navigation, and potential overflow problems.
 
-### Day 04 Deliverables
+## Day 05 — HTML/CSS Project Delivery
 
-- Responsive navigation bar
-- Responsive card grid
-- C08 overflow repair demonstration
+The fifth training day focuses on completing and presenting the responsive corporate website, reviewing accessibility, verifying project integration, and preparing the final GitHub submission.
+
+### Final Website Integration
+
+The project includes the following main pages:
+
+| Page | Description |
+|---|---|
+| `index.html` | Corporate landing page with hero, services, and featured content |
+| `about.html` | Company overview, mission, vision, and values |
+| `services.html` | Digital services, comparison table, and pricing plans |
+| `blog.html` | Blog listing with technology articles |
+| `blog-detail.html` | Complete article with related content |
+| `contact.html` | Contact form with HTML5 validation |
+| `registration.html` | Client registration form with grouped controls |
+| `gallery.html` | Media gallery with images and captions |
+| `profile.html` | Developer biography, skills, education, and training |
+| `faq.html` | Frequently asked questions using HTML5 details and summary elements |
+
+### FAQ Page
+
+The FAQ page was designed as an additional main website page to satisfy the final project's 10+ page requirement.
+
+It includes:
+
+- General questions about NexaTech Solutions
+- Questions about digital development and technology
+- Pricing and registration information
+- Expandable answers using `<details>` and `<summary>`
+- Keyboard-accessible interactive elements
+- Responsive styling with the existing design system
+- Links to related pages and services
+
+The FAQ interactions work without JavaScript.
+
+### Integration & Accessibility Review
+
+The final review focuses on:
+
+- Consistent navigation across all pages
+- Correct internal links and relative file paths
+- Reusable header, navigation, and footer styles
+- Semantic HTML structure
+- Descriptive alternative text for images
+- Accessible form labels and grouped controls
+- Visible keyboard focus states
+- Responsive images and typography
+- Layout adaptation across different screen widths
+- No unintended horizontal page overflow
+
+### Peer QA
+
+Peer quality assurance is part of the final delivery process.
+
+The review includes checking page navigation, responsive layouts, form validation, image loading, accessibility, and visual consistency.
+
+Any identified problems should be documented and corrected before the final submission.
+
+### Live Code Explanation
+
+The final presentation includes explaining:
+
+- HTML5 semantic structure
+- External CSS stylesheets
+- CSS variables and reusable design tokens
+- Cascade and specificity
+- CSS Box Model
+- Flexbox and Grid layout choices
+- Mobile-first responsive design
+- Media queries
+- Overflow debugging
+- Accessibility and keyboard focus states
+
+### Final Project Deliverables
+
+- 10+ responsive website pages
+- Updated README documentation
 - Mobile, tablet, and desktop screenshots
-- Explanation of Flexbox versus Grid
-- Updated project documentation
+- Responsive Navbar and Card Grid
+- C08 overflow repair demonstration
+- Peer QA review
+- Live project demonstration
+- Trainer rubric review
+- Final GitHub repository update
 
 ## Project Structure
 
@@ -198,6 +276,7 @@ Browser Developer Tools are used to inspect layout behavior, navigation, and pot
 ├── contact.html
 ├── registration.html
 ├── gallery.html
+├── faq.html
 ├── c08-overflow.html
 ├── css/
 │   ├── style.css
@@ -229,6 +308,7 @@ Browser Developer Tools are used to inspect layout behavior, navigation, and pot
 | Day 04 | Responsive Navbar |
 | Day 04 | Responsive Card Grid |
 | C08 | Responsive Overflow Repair |
+| Day 05 | Website Integration & Delivery |
 
 ## Accessibility Practices
 
@@ -242,6 +322,7 @@ Browser Developer Tools are used to inspect layout behavior, navigation, and pot
 - Visible keyboard focus styles
 - Readable typography and consistent spacing
 - Responsive layouts supporting different viewport sizes
+- Native HTML5 interactive elements
 
 ## How to Run
 
@@ -255,6 +336,7 @@ Browser Developer Tools are used to inspect layout behavior, navigation, and pot
 8. Enable Device Toolbar using `Ctrl + Shift + M`.
 9. Test the website at mobile, tablet, and desktop viewport widths.
 10. Open `c08-overflow.html` to view the responsive overflow repair demonstration.
+11. Visit `faq.html` to explore the expandable FAQ sections.
 
 ## Important Notes
 
@@ -274,4 +356,4 @@ All website pricing plans are fictional and are provided for educational purpose
 Computer Science Student — Birzeit University  
 Full Stack Development Intern — Grids Apps
 
-**GitHub:** https://github.com/Hiba072
+**GitHub:** https://github.com/Hiba072/GridsApps-HTML5-Training
